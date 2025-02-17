@@ -16,8 +16,8 @@ public class Main {
         System.out.println(Arrays.toString(numbers2));
 
         int sum = 0;
-        for (int i = 0;i < numbers.length; i++) {
-            sum = sum + numbers[i];
+        for (int number : numbers) {
+            sum = sum + number;
         }
         System.out.println("Сумма элементов массива: " + sum);
 
@@ -26,11 +26,17 @@ public class Main {
             sum1 = sum1 + intnum;
         }
         System.out.println("Сумма элементов массива: " + sum1);
+        int sum2 = 1;
+        for (int number2 : numbers) {
+            sum2 = sum2 + number2;
+        }
+        System.out.println("Сумма элементов массива: " + sum2);
 
         Arrays.sort(numbers);
         System.out.println(Arrays.toString(numbers));
 
-        int element = Arrays.binarySearch(numbers, 34);
+
+        int element = Arrays.binarySearch(numbers, 32);
         if (element < 0) {
             System.out.println("В массиве нет такого элемента");
         }else {
