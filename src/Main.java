@@ -3,47 +3,42 @@ import java.util.Arrays;
 public class Main {
     public static void main(String[] args) {
 
-        int[] numbers = new int[10];
-        int[] numbers2 = {1, 2, 3, 4, 10};
+        int[] numbers1 = {1, 2, 3};
+        System.out.println(Arrays.toString(numbers1));
 
-        numbers[0] = 3234;
-        numbers[1] = 34;
-        numbers[2] = 3;
-        numbers[3] = 32;
-        numbers[4] = 34;
+        for (int i = numbers1.length - 1; i >= 0; i--) {
 
-        System.out.println(Arrays.toString(numbers));
+            if (numbers1[i] % 2 != 0) {
+                numbers1[i] += 1;
+            }
+            System.out.print(numbers1[i] + ", ");
+        }
+        System.out.println();
+        double[] numbers2 = {1.57, 7.654, 9.986};
         System.out.println(Arrays.toString(numbers2));
 
-        int sum = 0;
-        for (int number : numbers) {
-            sum = sum + number;
-        }
-        System.out.println("Сумма элементов массива: " + sum);
+        for (int j = numbers2.length - 1; j >= 0; j--)
 
-        int sum1 = 0;
-        for (int intnum : numbers2) {
-            sum1 = sum1 + intnum;
+            if (numbers2[j] % 2 != 0) {
+                numbers2[j] += 1;
+            }
+        {
+            System.out.println(Arrays.toString(numbers2));
         }
-        System.out.println("Сумма элементов массива: " + sum1);
-        int sum2 = 1;
-        for (int number2 : numbers) {
-            sum2 = sum2 + number2;
+        {
+            System.out.println();
+            int[] numbers3 = {5, 6, 10};
+            System.out.println(Arrays.toString(numbers3));
+            for (int k = numbers3.length - 1; k >= 0; k--) {
+                System.out.print(numbers3[k] + ", ");
+                if (numbers3[k] % 2 != 0) {
+                    numbers3[k] += 1;
+                }
+            }
+
+
         }
-        System.out.println("Сумма элементов массива: " + sum2);
-
-        Arrays.sort(numbers);
-        System.out.println(Arrays.toString(numbers));
-
-
-        int element = Arrays.binarySearch(numbers, 32);
-        if (element < 0) {
-            System.out.println("В массиве нет такого элемента");
-        }else {
-            System.out.println(numbers[element]);
-        }
-        System.out.println(Arrays.equals(numbers, numbers2));
-        Arrays.fill(numbers2, 50);
-        System.out.println(Arrays.toString(numbers2));
     }
-}
+    }
+
+
