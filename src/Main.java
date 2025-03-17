@@ -41,18 +41,18 @@ public class Main {
                 {
 
 
-                        if (i < numbers3.length - 1)
-                            System.out.println(numbers3[i] + ", ");
-                        else {
-                            System.out.println(numbers3[i] + " ");
-
-                        }
+                    if (i < numbers3.length - 1)
+                        System.out.println(numbers3[i] + ", ");
+                    else {
+                        System.out.println(numbers3[i] + " ");
 
                     }
+
                 }
             }
         }
     }
+}
 
 
 
